@@ -10,6 +10,9 @@
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -63,7 +66,7 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="comunicaciones.html">Comunicaciones</a>
+                                    <a class="nav-link" href="layout-static.html">Comunicaciones</a>
                                     <a class="nav-link" href="layout-sidenav-light.html">Servicio y Experiencia</a>
                                 </nav>
                             </div>
@@ -131,42 +134,131 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Herramienta de Diagnóstico del Sistema de Control Interno de Acuerdo al Marco de Trabajo COSO 2013</h1>
+                        <h1 class="mt-4">Cuestionario para el Diagnóstico del Sistema de Control Interno</h1>
                         <div class="card mb-4">
                             <div class="card-body">
-                                <h5 class="mt-4">¿Cómo usar la herramienta?</h5>
-                                <p class="mb-0">
-                                    La herramienta está dividida en dos secciones, que se presentan a continuación:
-                                </p>
-                                <ol>
-                                    <li>Cuestionario</li>
-                                    <li>Tableros de control</li>
-                                </ol>
-                                <br>
-                                <ol>
-                                    <li>Cuestionario</li>
-                                        <p class="mb-0">
-                                            Se ha definido un cuestionario que cubre los Componentes, Principio y Puntos de Enfoque establecidos en el marco de referencia COSO 2013.
-                                        </p>
-                                    <li>Tableros de Control</li>
-                                        <p class="mb-0">
-                                            La herramienta cuenta con dos tableros de control. 
-                                        </p>
-                                </ol>
-                            </div>
-                        </div>
+                                <h4>Componente 1. Ambiente de Control</h4>
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h6>Principio 1. La organización demuestra compromiso con la integridad y los valores éticos</h6>
+                                        <p>La Junta Directiva y la Gerencia en todos los niveles de la organización demuestra la importancia de la integridad y los valores éticos para soportar el funcionamiento del sistema de control interno por medio de sus directrices, acciones y comportamientos.</p>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <p>P1. ¿La entidad cuenta con directrices que enmarque el comportamiento de la Dirección y la Administración?</p>
+                                                <label for="name">Consideraciones para la calificacion:</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Estado Actual
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">N/A</a>
+                                                        <a class="dropdown-item" href="#">0. No existe</a>
+                                                        <a class="dropdown-item" href="#">1. Inicial</a>
+                                                        <a class="dropdown-item" href="#">2. Repetible</a>
+                                                        <a class="dropdown-item" href="#">3. Definido</a>
+                                                        <a class="dropdown-item" href="#">4. Administrado</a>
+                                                        <a class="dropdown-item" href="#">4. Optimizado</a>
+                                                    </div>
+                                                </div>
 
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="mt-4">Nivel de madurez evaluados</h5>
-                                <p class="mb-0">
-                                    Los niveles de madurez para la evaluación del Sistema de Control Interno están definidos en el marco de referencia Capability Maturity Model Integration (CMMI), y se analizan por cada componente de control. A continuación se describen las definiciones y atributos generales de cada nivel.
-                                </p>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Estado Deseado
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">N/A</a>
+                                                        <a class="dropdown-item" href="#">0. No existe</a>
+                                                        <a class="dropdown-item" href="#">1. Inicial</a>
+                                                        <a class="dropdown-item" href="#">2. Repetible</a>
+                                                        <a class="dropdown-item" href="#">3. Definido</a>
+                                                        <a class="dropdown-item" href="#">4. Administrado</a>
+                                                        <a class="dropdown-item" href="#">4. Optimizado</a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <br><br>
+
+                                                <label for="name">Comentarios:</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                </div>
+                                            </div>
+                                        </div>        
+                                        
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <p>P2. ¿La entidad cuenta con mecanismos que permitan determinar las relaciones, transacciones y potenciales conflictos de interés con la Entidad que puedan tener los miembros de la Junta Directiva y Alta Dirección?</p>
+                                                <label for="name">Consideraciones para la calificacion:</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Estado Actual
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">N/A</a>
+                                                        <a class="dropdown-item" href="#">0. No existe</a>
+                                                        <a class="dropdown-item" href="#">1. Inicial</a>
+                                                        <a class="dropdown-item" href="#">2. Repetible</a>
+                                                        <a class="dropdown-item" href="#">3. Definido</a>
+                                                        <a class="dropdown-item" href="#">4. Administrado</a>
+                                                        <a class="dropdown-item" href="#">4. Optimizado</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Estado Deseado
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">N/A</a>
+                                                        <a class="dropdown-item" href="#">0. No existe</a>
+                                                        <a class="dropdown-item" href="#">1. Inicial</a>
+                                                        <a class="dropdown-item" href="#">2. Repetible</a>
+                                                        <a class="dropdown-item" href="#">3. Definido</a>
+                                                        <a class="dropdown-item" href="#">4. Administrado</a>
+                                                        <a class="dropdown-item" href="#">4. Optimizado</a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <br><br>
+
+                                                <label for="name">Comentarios:</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                </div>
+
+
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>        
                             </div>
                         </div>
-                        <div style="height: 100vh"></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
-                    </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4>Componente 2. Evaluación de Riesgos</h4>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4>Componente 3. Actividades de Control</h4>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4>Componente 4. Información y Comunicación</h4>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4>Componente 5. Actividades de Monitoreo</h4>
+                            </div>
+                        </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
