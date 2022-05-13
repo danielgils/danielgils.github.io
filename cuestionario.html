@@ -10,6 +10,9 @@
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -60,37 +63,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Cuestionario
                             </a>
-                            <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Cuestionario
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="comunicaciones.html">Comunicaciones</a>
-                                    <a class="nav-link" href="comunicaciones.html">Servicio y Experiencia</a>
-                                    <a class="nav-link" href="comunicaciones.html">Viaje y Recreación</a>
-                                    <a class="nav-link" href="comunicaciones.html">Hábitat</a>
-                                    <a class="nav-link" href="comunicaciones.html">Educación y Cultura</a>
-                                    <a class="nav-link" href="comunicaciones.html">Empleo y Emprendimiento</a>
-                                    <a class="nav-link" href="comunicaciones.html">Salud y Bienestar</a>
-                                    <a class="nav-link" href="comunicaciones.html">Servicios Financieros</a>
-                                    <a class="nav-link" href="comunicaciones.html">Gestión de Fondos</a>
-                                    <a class="nav-link" href="comunicaciones.html">Soporte Capacidades</a>
-                                    <a class="nav-link" href="comunicaciones.html">Talento Humano</a>
-                                    <a class="nav-link" href="comunicaciones.html">Estrategia e Innovación</a>
-                                    <a class="nav-link" href="comunicaciones.html">Secretaría General</a>
-                                    <a class="nav-link" href="comunicaciones.html">Auditoría Interna</a>
-                                    <a class="nav-link" href="comunicaciones.html">SO-Financiera</a>
-                                    <a class="nav-link" href="comunicaciones.html">SO-Operaciones</a>
-                                    <a class="nav-link" href="comunicaciones.html">SO-DLA</a>
-                                    <a class="nav-link" href="comunicaciones.html">SO-Tecnología</a>
-                                </nav>
-                            </div> -->
-
-
-
-
+                            
                             <!-- <div class="sb-sidenav-menu-heading">Cuestionario</div> -->
                             <!-- <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
@@ -155,42 +128,119 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Herramienta de Diagnóstico del Sistema de Control Interno de Acuerdo al Marco de Trabajo COSO 2013</h1>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="mt-4">¿Cómo usar la herramienta?</h5>
-                                <p class="mb-0">
-                                    La herramienta está dividida en dos secciones, que se presentan a continuación:
-                                </p>
-                                <ol>
-                                    <li>Cuestionario</li>
-                                    <li>Tableros de control</li>
-                                </ol>
-                                <br>
-                                <ol>
-                                    <li>Cuestionario</li>
-                                        <p class="mb-0">
-                                            Se ha definido un cuestionario que cubre los Componentes, Principio y Puntos de Enfoque establecidos en el marco de referencia COSO 2013.
-                                        </p>
-                                    <li>Tableros de Control</li>
-                                        <p class="mb-0">
-                                            La herramienta cuenta con dos tableros de control. 
-                                        </p>
-                                </ol>
+                        <h1 class="mt-4">Cuestionario para el Diagnóstico del Sistema de Control Interno</h1>
+
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>¿Qué desea actualizar?</h5>
+                                        <div class="btn-group text-center">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Seleccione...
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Transversales</a>
+                                                <a class="dropdown-item" href="#">Capacidad</a>
+                                                <a class="dropdown-item" href="#">Soporte</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>Indique red de trabajo a actualizar:</h5>
+                                        <div class="btn-group text-center">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Seleccione...
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Comunicaciones</a>
+                                                <a class="dropdown-item" href="#">Servicio y Experiencia</a>
+                                                <a class="dropdown-item" href="#">Viaje y Recreación</a>
+                                                <a class="dropdown-item" href="#">Hábitat</a>
+                                                <a class="dropdown-item" href="#">Educación y Cultura</a>
+                                                <a class="dropdown-item" href="#">Empleo y Emprendimiento</a>
+                                                <a class="dropdown-item" href="#">Salud y Bienestar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <br>
 
                         <div class="card mb-4">
                             <div class="card-body">
-                                <h5 class="mt-4">Nivel de madurez evaluados</h5>
-                                <p class="mb-0">
-                                    Los niveles de madurez para la evaluación del Sistema de Control Interno están definidos en el marco de referencia Capability Maturity Model Integration (CMMI), y se analizan por cada componente de control. A continuación se describen las definiciones y atributos generales de cada nivel.
-                                </p>
+                                <h4>Indice de preguntas</h4>
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingC1">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-light" data-toggle="collapse" data-target="#collapseC1" aria-expanded="false" aria-controls="collapseC1">
+                                                    Componente 1. Ambiente de Control
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseC1" class="collapse" aria-labelledby="headingC1" data-parent="#accordion">
+                                            <div class="card-header" id="headingC1P1">
+                                                <a class="btn btn-link" href="p1.html" role="button">Principio 1. La organización demuestra compromiso con la integridad y los valores éticos</a>    
+                                                <a class="btn btn-link" href="p2.html" role="button">Principio 2. La Junta Directiva demuestra independencia de la dirección y ejerce la supervisión del desarrollo y desempeño del sistema de control interno</a>        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingC2">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-light" data-toggle="collapse" data-target="#collapseC2" aria-expanded="false" aria-controls="collapseC2">
+                                                    Componente 2. Evaluación de Riesgos
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseC2" class="collapse" aria-labelledby="headingC2" data-parent="#accordion">
+                                            <div class="card-header" id="headingC2P1">
+                                                <a class="btn btn-link" href="p1.html" role="button">Principio 6. La organización especifica los objetivos con suficiente claridad para permitir la identificación y evaluaxión de los riesgos frente a los objetivos.</a>
+                                                <a class="btn btn-link" href="p2.html" role="button">Principio 7. La organización identifica riesgos al logro de sus objetivos a lo largo de la entidad y analiza los riesgos como una base para determinar cómo se deben manejar los riesgos.</a>        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingC3">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-light" data-toggle="collapse" data-target="#collapseC3" aria-expanded="false" aria-controls="collapseC3">
+                                                    Componente 3. Actividades de Control
+                                                </button>
+                                            </h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingC4">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-light" data-toggle="collapse" data-target="#collapseC4" aria-expanded="false" aria-controls="collapseC4">
+                                                    Componente 4. Información y Comunicación
+                                                </button>
+                                            </h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingC5">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-light" data-toggle="collapse" data-target="#collapseC5" aria-expanded="false" aria-controls="collapseC5">
+                                                    Componente 5. Actividades de Monitoreo
+                                                </button>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div style="height: 100vh"></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
-                    </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
@@ -215,3 +265,4 @@
         <script src="js/datatables-simple-demo.js"></script>
     </body>
 </html>
+
