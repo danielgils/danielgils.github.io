@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin</title>
+        <title>Level Colombia</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -329,8 +329,75 @@
                             </div>
                         </div>
 
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Análisis Consolidado por Principio
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Comp.</th>
+                                            <th>Principio</th>
+                                            <th>Estado Actual</th>
+                                            <th>Estado Objetivo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>C1</td>
+                                            <td>P1. La organización demuestra compromiso con la integridad y los valores éticos.</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C1</td>
+                                            <td>P2. La Junta Directiva demuestra independencia de la dirección y ejerce la supervisión del desarrollo y desempeño del sistema de control interno.</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C1</td>
+                                            <td>P3. La Gerencia establece, con la supervisión de la Junta Directiva, las estructuras, líneas de reporte y autoridades y responsabilidades apropiadas en la búsqueda de los objetivos.</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>C2</td>
+                                            <td>P6. La organización especifica los objetivos con suficiente claridad para permitir la identificación y la evaluación de los riesgos frente a los objetivos.</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C2</td>
+                                            <td>P7. La organización identifica riesgos al logro de sus objetivos a lo largo de la entidad y analiza los riesgos como una base para determinar cómo se deben manejar los riesgos.</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Gráfica Consolidada por Principio
+                            </div>
+                            <div class="card-body">
+                                <canvas id="DiagramaBarras" width="100%" height="76"></canvas>
+                            </div>
+                        </div>
+
                         <!-- ########################################################### -->
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-xl-6">
                                 <div class="card mb-4">
                                     <div class="card-header">
@@ -349,9 +416,9 @@
                                     <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="card mb-4">
+                        <!-- <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
                                 DataTable Example
@@ -838,7 +905,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
@@ -863,5 +930,6 @@
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
         <script src="assets/demo/radar.js"></script>
+        <script src="assets/demo/diagrama_barras.js"></script>
     </body>
 </html>
