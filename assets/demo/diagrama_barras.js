@@ -5,15 +5,26 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 // Bar Chart Example
 var ctx = document.getElementById("DiagramaBarras");
 var myLineChart = new Chart(ctx, {
-  type: 'horizontalBar',
+  type: 'bar',
   data: {
-    labels: ["P1", "P2", "P3", "", "P6", "P7"],
-    datasets: [{
+    labels: ["P1", "P2", "P3", "P6", "P7"],
+    datasets: [
+    {
       label: "Estado Actual",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [2,2,2,0,3,1],
-    }],
+      data: [2,2,2,3,1],
+    },
+    
+    {
+      label: "Estado Actual",
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [3,3,3,3,3],
+      
+    }
+    
+    ],
   },
   options: {
     indexAxis: 'y',
